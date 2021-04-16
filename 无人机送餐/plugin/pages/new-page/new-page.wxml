@@ -1,0 +1,110 @@
+<!--pages/new-page/new-page.wxml-->
+<view class="newpage_container">
+  <view class="newpage_store">
+      <view class="newpage_store_item">
+        <image class="newpage_store_img" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969051694897.png"></image>
+        <view class="newpage_store_item_all">
+          <view class="newpage_store_item_text">
+            <text class="newpage_store_item_food">{{username}}</text><text>{{phone}}</text>
+          </view>
+          <view class="newpage_store_item_local smallsive">{{local}}</view>
+        </view>
+      </view>
+  </view>
+
+  <view class="newpage_main_container">
+      <image class="newpage_main_img11" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969279912822.png"></image>
+        <view class="newpage_main_bottom">
+          <view class="newpage_item">
+        <view class="newpage_item_top">
+          <text class="smallblack">客户姓名：</text><input class="item_input" placeholder-style="rgb(246,246,246)" placeholder-class="place_class" bindinput="getusername" type="text" placeholder="请输入客户姓名" ></input>
+        </view>
+      </view>
+      <view class="newpage_item">
+        <view class="newpage_item_top">
+          <text class="smallblack">客户电话：</text><input class="item_input"  placeholder-style="rgb(246,246,246)" type="text" bindinput="getuserphone" placeholder-class="place_class" placeholder="请输入客户电话"></input>
+        </view>
+      </view>
+      <view class="newpage_item  newpagelast">
+        <view class="newpage_item_top">
+          <text class="smallblack">客户地址：</text><input class="item_input"  placeholder-style="rgb(246,246,246)" type="text" bindinput="getuserlocal" placeholder-class="place_class" placeholder="请输入客户地址"></input>
+        </view>
+      </view>
+        </view>
+  </view>
+   
+ <view wx:for="{{addList}}" wx:key="id">
+
+  <view class="newpage_bottom_container" >
+      <view class="newpage_bottom_top">
+        <image class="newpage_main_img" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176965306702339.png"></image>
+        <view class="newpage_item" id="newpage_bottom_top_item">
+        <view class="newpage_item_top">
+          <text class="smallblack sjsjs">{{item.type}}</text><text class="choosecolour">（选填）</text> <input class="item_input" bindfocus="getindex" value="{{item.value}}" type="text" maxlength="200" data-index="{{index}}" bindinput="getuserfood" placeholder-class="place_class" placeholder="请输入餐品名+数量"></input>
+        </view>
+      </view>
+      
+      
+      </view>
+      
+      <view class="newpage_bottom_bottom"><text class="newpage_bottom_bottom_text" bindtap="addinput">{{item.addtext}}</text></view>
+  </view>
+      
+ </view>
+
+ <view class="addpicture_container"> 
+         <view class="dhdhdhhdhalll">
+          <image class="photoqiwww" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/1617696857042575.png"></image>
+          <view class="addpicture_container_text smallblack">图片：</view><text class="choosecolour">（选填）</text>
+         </view>
+          <view class="addpicture_container_item" >
+            <view class="addpicture"index='0'>
+              <image wx:if="{{issuccess1==false}}" class="addphotos" bindtap="upload_img1" data-index="{{0}}" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176964880449805.png"></image>
+              <image wx:else class="addphotos" src="{{imgPaths[0]}}" bindtap="preview"  data-index="{{0}}" bindlongpress="deleteImg1" data-imgsrc="{{imgPaths[0]}}" data-src="{{imgPaths[0]}}"></image>
+            </view>
+          <view class="addpicture" index='1'>
+            <image wx:if="{{issuccess2==false}}" class="addphotos" bindtap="upload_img2"  data-index="{{1}}" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176964880449805.png"></image>
+              <image wx:else class="addphotos" src="{{imgPaths[1]}}" bindlongpress="deleteImg2"  data-index="{{1}}" data-imgsrc="{{imgPaths[1]}}"  data-src="{{imgPaths[1]}}" bindtap="preview"></image>
+          </view>
+          <view class="addpicture"  index='2'>
+            <image wx:if="{{issuccess3==false}}" class="addphotos" bindtap="upload_img3"  data-index="{{2}}" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176964880449805.png"></image>
+              <image wx:else class="addphotos" src="{{imgPaths[2]}}" bindlongpress="deleteImg3"  data-index="{{2}}" data-imgsrc="{{imgPaths[2]}}"  data-src="{{imgPaths[2]}}" bindtap="preview"></image>
+          </view>
+          </view>
+      </view>
+
+      <view class="local_container">
+            <view class="local_top">
+              <image src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-09/16179507159341816.png"></image>
+              <view class="local_top_text" wx:if="{{isclick==false}}">请选择终点机柜<text class="redclass">（选填）</text></view>
+              <text wx:else class="local_top_text">{{localresult}}</text>
+            </view>
+            <view class="local_bottom" bindtap="opendlog">
+              选择
+            </view>
+      </view>
+
+        <view class="local_delog" wx:if="{{isshow==true}}">
+              <view class="local_delog_top">
+                <view>请选择起降点</view> <image bindtap="closedelog" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-09/16179507001853457.png"></image>
+              </view>
+               
+                <scroll-view scroll-y="true" class="local_delog_middle" >
+                  <view  class="local_delog_middle_item {{currentindex==index? 'currentindexclass' :''}}" wx:for="{{airportList}}" bindtap="clickcurrentindex" data-index="{{index}}" data-id="{{item.id}}" data-name="{{item.name}}">
+                    <view class="local_delog_middle_item_text">{{item.name}}</view>
+                    
+                  </view>
+                </scroll-view>
+               
+              
+
+              <button plain="true" bindtap="closesssss">确认</button>
+        </view>
+
+       
+
+      <button class="addgoods" bindtap="addGoods"  disabled="{{isonce}}" plain="true">生成存货码</button>
+</view>
+<view class="black_bordershowow" wx:if="{{isshow==true}}">
+
+</view>

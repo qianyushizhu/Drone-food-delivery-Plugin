@@ -1,0 +1,31 @@
+<!--pages/home-page/home-page.wxml-->
+<view class="home_container">
+    <view class="home_swiper_container">
+      <swiper class="home_swiper" autoplay="true" indicator-dots="true" indicator-active-color='#fff' circular='true'>
+        <swiper-item wx:for="{{swiperImgList}}" wx:key="id"><image class="home_swiper_img" src="{{item}}"></image></swiper-item>
+      </swiper>
+    </view>
+
+    <view class="home_middle_container">
+        <view class="home_middle_text1">支持配送商家</view>
+        <view class="home_middle_text2" bindtap="gotip">操作指引</view>
+    </view>
+    <view class="home_main_container">
+        <view class="home_main_container_item" wx:for="{{storeList}}" wx:key="id" bindtap="goStore" data-id="{{item.id}}">
+          <image src="{{item.icon}}"></image>
+         
+         <view class="home_main_container_item_text_container">
+          <text class="home_main_container_item_text1">{{item.name}}</text>
+          <text class="home_main_container_item_text2">{{item.local}}</text>
+         </view>
+         
+        </view>
+    </view>
+    <view class="box">
+        到底了哦，亲~
+    </view>
+    <view class="home_bottom_button">
+      <button class="home_bottom_button1" plain="true" bindtap="searchOrder">订单查询</button>
+      <button class="home_bottom_button2" plain="true" bindtap="goLogin">商家登录</button>
+    </view>
+</view>

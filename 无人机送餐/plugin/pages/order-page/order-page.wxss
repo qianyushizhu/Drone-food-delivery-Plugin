@@ -1,0 +1,252 @@
+.order_container{
+  
+  box-sizing: border-box;
+  background-color: rgba(246,246,246);
+  
+}
+.order_top_container{
+  height: 453rpx;
+  padding: 30rpx 30rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.order_swiper_img{
+  width: 690rpx;
+  height: 230rpx;
+}
+.order_swiper_container{
+  margin-bottom: 40rpx;
+}
+.order_swiper{
+  margin-bottom: 30rpx;
+  line-height: 120rpx;
+}
+.order_swiper_container_top{
+  width: 690rpx;
+  height: 80rpx;
+  display: flex;
+  background: #F9F9F9;
+  border: 1px solid rgba(229,236,237,1);
+  border-radius: 10rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  position: relative;
+  top: -40rpx;
+}
+.order_swiper_container_top view{
+  width: 346rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  
+}
+.activeclass{
+  color: #fff;
+  background: #37AC96;
+  border-radius: 10rpx;
+}
+.order_list_container{
+  box-sizing: border-box;
+  position: relative;
+  left: 30rpx;
+  top: 30rpx;
+  width: 690rpx;
+
+}
+.order_list_item_img{
+  width: 252rpx;
+  height: 20rpx;
+}
+.order_list_item_img2{
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+  top: 5.5rpx;
+  margin-right: 12rpx;
+}
+.order_list_item_img2_all{
+  position: relative;
+  left: 50rpx;
+  top: 5rpx;
+}
+.order_list_item_img2_all1{
+  position: relative;
+  left: 25rpx;
+}
+.order_list_item{
+  width: 690rpx;
+  /* height: 296rpx; */
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.10);
+  border: 1rpx solid transparent;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  
+}
+.order_list_item{
+  margin-bottom: 30rpx;
+}
+.order_list_item_top{
+  width: 690rpx;
+  height: 42rpx;
+  background-color: rgb(79,79,79);
+  font-size: 20rpx;
+  font-family: PingFangSC-Regular;
+  color: #FFFFFF ;
+  line-height: 42rpx;
+  
+}
+.order_list_item_top text{
+  margin-left: 20rpx;
+}
+.order_list_item_bottom{
+  width: 690rpx;
+  height: 254rpx;
+  background-color: #fff;
+}
+.common_sive{
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+    color: #000000;
+    opacity: 0.6;
+}
+.common_bigsive{
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #000;
+}
+
+.order_list_item_middle{
+  display: flex;
+  margin-left: 120rpx;
+  
+}
+.goingclass{
+  font-family: PingFangSC-Regular;
+  color: #37AC96 ;
+  font-size: 24rpx;
+}
+.order_list_item_middle_left{
+  width: 100rpx;
+  height: 68rpx;
+  position: relative;
+  left: -50rpx;
+  top: 23rpx;
+}
+.order_list_item_middle_middle{
+  width: 252rpx;
+  height: 96rpx;
+  position: relative;
+  top: 20rpx;
+}
+.order_list_item_middle_right{
+  width: 60rpx;
+  height: 68rpx;
+  position: relative;
+  
+  top: 24rpx;text-align: center;
+}
+.order_list_item_middle_left_text_top1{
+  margin-bottom: 5rpx;
+  width: 200rpx;
+}
+.order_list_item_middle_right_text2{
+  width: 200rpx;
+}
+.order_list_item_middle_left_text_top2{
+  position: relative;
+  left: -20rpx;
+  width: 200rpx;
+}
+.order_list_item_middle_right_text1{
+  margin-bottom: 3rpx;
+  width: 200rpx;
+}
+.order_list_item_tab{
+   display: flex; 
+ 
+}
+.food{
+  display: inline-block;
+  width: 500rpx;
+  height: 50rpx; 
+  white-space: nowrap;
+  
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+}
+.order_list_item_tab_top{
+  position: relative;
+  top: 30rpx;
+  left: 20rpx;
+  width: 650rpx;
+  display: flex;
+}
+.order_list_item_tab_bottom{
+  display: flex;
+  width: 116rpx;
+  /* height: 30rpx; */
+  /* width: 680rpx; */
+  /* border: 1rpx solid rgba(55,172,150,1); */
+  justify-content: space-between;
+  font-size: 20rpx;
+  font-family: PingFangSC-Regular;
+  color: #fff;
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+
+
+}
+.order_list_item_tab_bottom_text1{
+  width: 119rpx;
+  height: 45rpx;
+  background-color: rgb(55,172,150);
+  
+  text-align: center;
+  line-height: 43rpx;
+  border-radius: 20rpx;
+      position: absolute;
+      bottom: 5rpx;
+      right: 13rpx;
+     
+  
+}
+.goingclass2{
+  font-size: 24rpx;
+}
+.order_button_container{
+  width: 100%;
+  height: 130rpx;
+  position: fixed;
+  bottom: 50rpx;
+  left: 3rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  height: 250rpx;
+  text-align: center;
+  color: rgb(79,79,79);
+  
+  font-size:28rpx ;
+  line-height: 102rpx;
+}
+.order_button{
+  
+  
+  width: 602rpx;
+  height: 120rpx;
+  border-radius: 50rpx;
+  background: #37AC96 !important;
+  box-shadow: 0px 5px 20px 0px rgba(55,172,150,0.50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+  border: none !important;
+  
+}

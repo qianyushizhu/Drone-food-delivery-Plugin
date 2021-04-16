@@ -1,0 +1,20 @@
+{
+  "publicComponents": {
+    "hello-component": "components/hello-component"
+  },
+  "pages": {
+    "home-page": "pages/home-page/home-page",
+    "login-page": "pages/login-page/login-page",
+    "order-page": "pages/order-page/order-page",
+    "new-page": "pages/new-page/new-page",
+    "tip-page": "pages/tip-page/tip-page",
+    "store-page": "pages/store-page/store-page",
+    "polyline-page": "pages/polyline-page/polyline-page",
+    
+    "search-page": "pages/search-page/search-page",
+    "orderInfo-page": "pages/orderInfo-page/orderInfo-page",
+    "store-orderInfo-page": "pages/store-orderInfo-page/store-orderInfo-page"
+    
+  },
+  "main": "index.js"
+}

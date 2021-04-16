@@ -1,0 +1,35 @@
+<view class="tip_container">
+  <view class="home_swiper_container">
+      <swiper class="home_swiper" autoplay="true" indicator-dots="true">
+        <swiper-item wx:for="{{swiperImgList}}" wx:key="id"><image class="home_swiper_img" src="{{item}}"></image></swiper-item>
+      </swiper>
+    </view>
+
+
+    <view  class="order_swiper_container_top">
+            <view class="order_swiper_container_top_button1 {{currentindex===1 ? 'activeclass' :''}} " bindtap="setclass1">我是普通用户</view>
+            <view class="order_swiper_container_top_button2  {{currentindex===2 ? 'activeclass' :''}}" bindtap="setclass2">我是商家</view>
+      </view>
+
+
+    <view wx:if="{{currentindex===2}}" class="tip_bottom">
+      <view><image src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969740853756.png"></image></view>
+      <view class="tip_bottom_item">
+        <view class="last1class">外卖平台接订单</view>
+      <view class="last2class">商户选择自行配送</view>
+      <view class="last3class">打开小程序创建订单</view>
+      <view class="last4class">根据存货码去无人机机柜存货</view>
+      <view class="lastclass">订单实时查询</view>
+      </view>
+    </view>
+    <view wx:else class="tip_bottom">
+      <view><image src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969740853756.png"></image></view>
+      <view class="tip_bottom_item">
+        <view  class="last1class">外卖平台下单</view>
+      <view  class="last2class">短信接收订单信息</view>
+      <view  class="last3class">打开小程序，订单查询实时配送信息</view>
+      <view  class="last4class">根据取货码去无人机机柜取货</view>
+      <view class="lastclass">完成配送</view>
+      </view>
+    </view>
+</view>

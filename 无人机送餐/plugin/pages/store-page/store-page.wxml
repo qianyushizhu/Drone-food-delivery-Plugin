@@ -1,0 +1,43 @@
+
+<view class="store_container">
+ 
+    <view wx:if="{{storeList.storeCertRespVOList.length!==0&&storeList.storeLeaderRespVOList.length!==0&&storeList.storeSceneRespVOList.length!==0}}">
+      <view class="store_principal">
+        <view class="store_principal_item" wx:for="{{storeList.storeLeaderRespVOList}}" wx:key="{{index}}">
+              <view class="store_principal_item_top">
+                <view class="store_principal_item_text1">商家负责人</view>
+                <view><image class="store_principal_item_img radius" bindtap="preview" data-src="{{item.photo}}" src="{{item.photo}}"></image></view>
+              </view>
+              <view class="store_principal_item_bottom">
+                <view>{{item.name}}</view>
+                <view>{{item.position}}</view>
+                <view bindtap="byphone" data-phone="{{item.telephone}}">{{item.telephone}}</view>
+                <text selectable='true' bindtap="clonetext" data-text="{{item.email}}">{{item.email}}</text>
+              </view>
+        </view>
+    </view>
+    <view  wx:if="{{storeList.storeCertRespVOList.length==0}}"></view>
+    <view wx:else class="store_certificate_container" >
+        <view class="store_principal_item_text_container">
+          <view class="store_principal_item_text">商家资质信息凭证</view>
+        </view>
+        <view wx:for="{{storeList.storeCertRespVOList}}" class="store_certificate_item_conatiner" wx:key="{{index}}">
+          <view class="store_certificate_item"><image class="store_principal_item_img radius" bindtap="storepreview" data-src="{{item.certPhoto}}" src="{{item.certPhoto}}"></image></view>
+        </view>
+    </view>
+    <view  wx:if="{{storeList.storeSceneRespVOList.length==0}}"></view>
+    <view wx:else class="store_certificate_container">
+      <view class="store_principal_item_text_container1">
+        <view class="store_principal_item_text">商家相册</view>
+      </view>
+        
+        <view wx:for="{{storeList.storeSceneRespVOList}}" class="store_certificate_item_conatiner" wx:key="{{index}}">
+          <view class="store_certificate_item"><image class="store_principal_item_img radius"  bindtap="storepreviewlocal" data-src="{{item.img}}" src="{{item.img}}"></image></view>
+        </view>
+    </view>
+  </view>
+  <view wx:else class="imgimgimg_container"><image class="imgimgimg" src="../../img/wurenjiimg/kongbai.png"></image>
+    <view>该商家没有信息哦~</view>
+  </view>
+</view>
+

@@ -1,0 +1,251 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": [
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/orderInfo-page/orderInfo-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/orderInfo-page/orderInfo-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/home-page/home-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/home-page/home-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/tip-page/tip-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/tip-page/tip-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/orderInfo-page/orderInfo-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/orderInfo-page/orderInfo-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/store-page/store-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/home-page/home-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/home-page/home-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/tip-page/tip-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/tip-page/tip-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/tip-page/tip-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/tip-page/tip-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/home-page/home-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/home-page/home-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/search-page/search-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/order-page/order-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "pathName": "__plugin__/wx7ca23a6101616353/pages/new-page/new-page",
+          "scene": null
+        }
+      ]
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": []
+    }
+  }
+}

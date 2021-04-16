@@ -1,0 +1,112 @@
+<!--pages/order-page/order-page.wxml-->
+<view class="order_container">
+ <view class="order_top_container">
+  <view class="order_swiper_container">
+      <swiper class="order_swiper" autoplay="true" indicator-dots="true" class="order_swiper">
+        <swiper-item wx:for="{{swiperList}}" wx:key="id"><image class="order_swiper_img" src="{{item}}"></image></swiper-item>
+      </swiper>
+
+      <view  class="order_swiper_container_top">
+            <view class="order_swiper_container_top_button1 {{currentindex===1 ? 'activeclass' :''}} " bindtap="setclass1">进行中</view>
+            <view class="order_swiper_container_top_button2  {{currentindex===2 ? 'activeclass' :''}}" bindtap="setclass2">已完成</view>
+      </view>
+    </view>
+ </view>
+
+  <view class="order_list_container" wx:if="{{currentindex===1}}">
+    <view class="order_list_item" wx:for="{{goingList}}" wx:key="id">
+      <view class="order_list_item_top"><text>订单号：{{item.orderNumber}}</text></view>
+      <view class="order_list_item_bottom">
+        <view class="order_list_item_middle">
+
+          <view class="order_list_item_middle_left">
+            <view class="common_bigsive order_list_item_middle_left_text_top1">商家</view>
+            <view class="common_sive order_list_item_middle_left_text_top2">{{item.storeName}}</view>
+          </view>
+
+          <view  class="order_list_item_middle_middle">
+
+
+            <view wx:if="{{item.status==11}}" class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176967968583606.png"></image><text class="goingclass">待商家发货</text></view>
+
+            <view wx:elif="{{item.status==12}}" class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969628504169.png"></image><text class="goingclass">无人机配送中</text></view>
+
+            <view wx:else class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969392813230.png"></image><text class="goingclass">待客户取货</text></view>
+
+            <view><image class="order_list_item_img" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176968089073807.png"></image></view>
+            
+          </view>
+          <view  class="order_list_item_middle_right">
+            <view class="common_bigsive order_list_item_middle_right_text1">客户</view>
+            <view class="common_sive order_list_item_middle_right_text2">{{item.clientName}}</view>
+          </view>
+
+        </view>
+
+        <view class="order_list_item_tab">
+          <view class="order_list_item_tab_top">
+            <text class="common_sive">订单详情：</text><text class="food">{{item.foodName}}</text>
+          </view>
+          <view class="order_list_item_tab_bottom">
+            <view class="order_list_item_tab_bottom_text1" bindtap="goOrderInfo" data-code="{{item.orderNumber}}">详情</view>
+            
+          </view>
+        </view>
+
+      </view>
+    </view>
+    
+
+  </view>
+  <view class="order_list_container" wx:if="{{currentindex===2}}">
+    <view class="order_list_item" wx:for="{{overList}}" wx:key="id">
+      <view class="order_list_item_top"><text>订单号：{{item.orderNumber}}</text></view>
+      <view class="order_list_item_bottom">
+        <view class="order_list_item_middle">
+
+          <view class="order_list_item_middle_left">
+            <view class="common_bigsive order_list_item_middle_left_text_top1">商家</view>
+            <view class="common_sive order_list_item_middle_left_text_top2">{{item.storeName}}</view>
+          </view>
+
+          <view  class="order_list_item_middle_middle">
+
+
+            <view  class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969509675413.png"></image><text class="goingclass2">客户已取货</text></view>
+
+           
+
+           
+
+            <view><image class="order_list_item_img" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176968234349987.png"></image></view>
+            
+          </view>
+          <view  class="order_list_item_middle_right">
+            <view class="common_bigsive order_list_item_middle_right_text1">客户</view>
+            <view class="common_sive order_list_item_middle_right_text2">{{item.clientName}}</view>
+          </view>
+
+        </view>
+
+        <view class="order_list_item_tab">
+          <view class="order_list_item_tab_top">
+            <text class="common_sive">订单详情：</text><text class="food">{{item.foodName}}</text>
+          </view>
+          <view class="order_list_item_tab_bottom">
+            <view class="order_list_item_tab_bottom_text1" data-code="{{item.orderNumber}}" bindtap="goOrderInfo">详情</view>
+          </view>
+           
+          
+        </view>
+
+      </view>
+    </view>
+   
+  </view>
+ <view class="order_button_container">
+  <button class="order_button" bindtap="gonew" plain="true">新建订单</button>
+ </view>
+ <view class="box">
+        到底了哦，亲~
+    </view>
+</view>

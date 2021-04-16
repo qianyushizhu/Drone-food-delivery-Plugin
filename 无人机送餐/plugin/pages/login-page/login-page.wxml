@@ -1,0 +1,27 @@
+<!--pages/login-page/login-page.wxml-->
+<view class="login_container">
+    <view class="login_test_container">
+      <image class="login_bgiimg" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/1617696845186593.png"></image>
+      <image class="login_text" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969164432789.png"></image>
+    </view>
+
+    <view class="login_main_container">
+        <view class="login_main_top">
+          <view class="login_main_top_phone">手机号</view>
+        <text class="login_main_top_text">+86</text><input type="text" bindblur="checkphone"  placeholder="请输入手机号" bindinput="getPhone" value="{{phonenum}}"></input>
+        </view>
+       <view class="login_main_middle">
+        <view class="login_main_middle_password">密码</view>
+        <input type="text" placeholder="请输入密码"   bindinput="getPassWord" password="{{ispassword}}" value="{{passwordnum}}"></input>
+        <image class="yincang" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969844333777.png" bindtap="ispassWord"></image>
+       </view>
+
+       <view class="login_main_bottom">
+          <view class="login_main_bottom_wanji" style="display:none">忘记密码</view>
+          <view style="display:none">申请成为商家</view>
+       </view>
+
+    </view>
+
+    <button class="login_button" bindtap="login" plain="true">登录</button>
+</view>

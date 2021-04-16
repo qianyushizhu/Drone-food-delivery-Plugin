@@ -1,0 +1,83 @@
+<!--pages/search-page/search-page.wxml-->
+<view class="home_container">
+  <view class="home_top">
+    <view class="home_swiper_container">
+      <swiper class="home_swiper" autoplay="true" indicator-dots="true" indicator-active-color="#fff">
+        <swiper-item wx:for="{{swiperImgList}}" wx:key="id"><image class="home_swiper_img" src="{{item}}"></image></swiper-item>
+      </swiper>
+</view>
+
+  <view class="home_top_buttom">
+  <input type="text" bindconfirm="getvalue" cursor="20" bindinput="getordervalue" bindblur="valuenone" bindfocus="cleanvalue" placeholder="请输入订单号" value="{{inputvalue}}">
+      <image class="searchimg" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176968795603667.png"></image>
+      
+      <image wx:if="{{isclean}}"  class="cleanimg" bindtap="cleantext" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176968688044907.png"></image>
+      
+    </input>
+    </view>
+  </view>
+
+  <view class="home_middle_all">
+
+    <view wx:if="{{isshow===true}}"  class="order_list_container">
+    <view class="order_list_item" >
+      <view class="order_list_item_top"><text>订单号：{{orderList.orderNumber}}</text></view>
+      <view class="order_list_item_bottom">
+        <view class="order_list_item_middle">
+
+          <view class="order_list_item_middle_left">
+            <view class="common_bigsive order_list_item_middle_left_text_top1">商家</view>
+            <view class="common_sive order_list_item_middle_left_text_top2">{{orderList.storeName}}</view>
+          </view>
+
+          <view  class="order_list_item_middle_middle">
+
+
+            <view wx:if="{{orderList.status==11}}" class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176967968583606.png"></image><text class="goingclass">待商家发货</text></view>
+
+            <view wx:elif="{{orderList.status==12}}" class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969628504169.png"></image><text class="goingclass">无人机配送中</text></view>
+
+           
+           
+            <view wx:elif="{{orderList.status==13}}" class="order_list_item_img2_all"><image class="order_list_item_img2" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969392813230.png"></image><text class="goingclass">待客户取货</text></view>
+
+            <view wx:else class="order_list_item_img2_all"
+            
+            
+            ><image class="order_list_item_img2 "  src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176969509675413.png"></image><text class="blackclass">订单已完成</text></view>
+ 
+            
+            <view wx:if="{{orderList.status !='00'}}">
+              <image class="order_list_item_img" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176968089073807.png">
+              </image>
+            </view>
+              
+            <view wx:else><image class="order_list_item_img" src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176968234349987.png"></image></view>
+            
+            
+          </view>
+          <view  class="order_list_item_middle_right">
+            <view class="common_bigsive order_list_item_middle_right_text1">客户</view>
+            <view class="common_sive order_list_item_middle_right_text2">{{orderList.clientName}}</view>
+          </view>
+
+        </view>
+
+        <view class="order_list_item_tab">
+          <view class="order_list_item_tab_top">
+            <text class="common_sive">订单详情：</text><text class="food">{{orderList.foodName}}</text>
+          </view>
+          
+        </view>
+          <view class="order_list_item_tab_bottom">
+            <view class="order_list_item_tab_bottom_text1" bindtap="goorderinfo" data-code="{{orderList.orderNumber}}">详情</view>
+            
+          </view>
+      </view>
+    </view>
+   
+
+  </view>
+    <view class="imgcontainer" wx:else><image src="https://locatorsys.oss-cn-qingdao.aliyuncs.com/locatorsys/2021-04-06/16176965035397383.png"></image></view>
+  </view>
+</view>

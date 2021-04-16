@@ -1,0 +1,133 @@
+/* pages/home-page/home-page.wxss */
+.home_container{
+  padding: 42rpx 30rpx;
+  box-sizing: border-box;
+}
+.home_swiper_img{
+  width: 690rpx;
+  height: 230rpx;
+  
+}
+.home_swiper_container{
+  /* margin-bottom: 10rpx; */
+  line-height: 120rpx;
+}
+.home_middle_container{
+  margin-top: -33rpx;
+    margin-bottom: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_middle_text1{
+  font-family: PingFangSC-Medium;
+  color: #000000 100%;
+  display: inline-block;
+  font-size: 32rpx;
+  width: 192rpx;
+  height: 44rpx;
+  font-weight: 750;
+}
+.home_middle_text2{
+  font-family: PingFangSC-Regular;
+  color: #FF0000 ;
+  font-size: 28rpx;
+  display: inline-block;
+  width: 113rpx;
+  height: 40rpx;
+  border-bottom: 2rpx solid #FF0000;
+  padding-top: 20rpx;
+  
+}
+.home_main_container{
+  position: relative;
+}
+.home_main_container image{
+  border-radius: 8rpx;
+}
+.home_main_container_item{
+  box-sizing: border-box;
+  width: 690rpx;
+  height: 140rpx;
+  padding: 20rpx;
+  border: 2rpx solid rgba(229,236,237,1);
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+}
+.home_main_container_item_text_container{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 170rpx;
+  top: -103.5rpx;
+  width: 70%;
+}
+.home_main_container_item image{
+  width: 140rpx;
+  height: 100rpx;
+
+}
+.home_main_container_item_text1{
+  width: 70%;
+  font-family: PingFangSC-Medium;
+  color: #000000 ;
+  font-size: 32rpx;
+  font-weight: 750;
+  margin-bottom: 6rpx;
+  
+}
+.home_main_container_item_text2{
+  width: 70%;
+  font-family: PingFangSC-Medium;
+  color: #000000 ;
+  opacity: 0.4;
+  font-size: 25rpx;
+  font-weight: 750;
+  
+}
+.home_bottom_button{
+  position: fixed;
+  bottom: 60rpx;
+  left: 2rpx;
+  display: flex;
+  justify-content: space-between;
+  /* width: 702rpx; */
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  height: 72px;
+}
+.home_bottom_button button{
+  width: 260rpx;
+  height: 40px;
+  border-radius: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  font-weight: 550;
+}
+.home_bottom_button1{
+  border: none !important;
+  background: #FFFFFF !important;
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+  color: #37AC96;
+  
+}
+.home_bottom_button2{
+ 
+  box-shadow: 0px 5px 20px 0px rgba(55,172,150,0.50);
+  color: #FFFFFF !important;
+  border: none !important;
+  background-color: #37AC96 !important;
+}
+.box{
+  height: 150rpx;
+  text-align: center;
+  color: #000000;
+  opacity: 0.6;
+  font-size:24rpx ;
+  line-height: 200rpx;
+}

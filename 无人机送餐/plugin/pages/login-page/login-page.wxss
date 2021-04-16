@@ -1,0 +1,113 @@
+/* pages/login-page/login-page.wxss */
+.login_bgiimg{
+  width: 750rpx;
+  height: 350px;
+  z-index: -1;
+}
+.login_container{
+  font-size: 32rpx !important;
+}
+.login_test_container{
+  width: 750rpx;
+  height: 350px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+.login_text{
+  width: 566rpx;
+  height: 144rpx;
+  position: absolute;
+  z-index: 1;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login_main_container{
+  box-sizing: border-box;
+  padding: 0 60rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color: #000000;
+}
+
+.login_main_top{
+    width: 630rpx;
+    height: 132rpx;
+    position: relative;
+    top: -60rpx;
+    /* margin-bottom: 30rpx; */
+}
+.login_main_top input{
+  display: inline-block;
+  border-bottom: 1rpx solid rgb(229,236,237);
+  width: 500rpx;
+  
+
+}
+.login_main_top_phone{
+  margin-bottom: 30rpx;
+  
+}
+.login_main_top_text{
+  margin-right: 40rpx;
+  position: relative;
+  /* top: -10rpx; */
+}
+.login_main_middle{
+  position: relative;
+  margin-bottom: 40rpx;
+}
+.login_main_middle_password{
+  margin-bottom: 30rpx;
+}
+.login_main_middle input{
+  width: 630rpx;
+  border-bottom: 1rpx solid rgb(229,236,237);
+  
+}
+.yincang{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 80rpx;
+  
+}
+.login_main_bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 630rpx;
+  margin-bottom: 50rpx;
+
+}
+.login_button{
+  width: 602rpx;
+  height: 120rpx;
+  background: #37AC96 !important;
+  box-shadow: 0px 5px 20px 0px rgba(55,172,150,0.50);
+  border-radius: 100rpx;
+  /* text-align: center;
+  line-height: 120rpx; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Medium;
+  color: #FFFFFF !important;
+  font-size: 40rpx;
+  font-weight: 600;
+  position: fixed;
+  bottom: 50rpx;
+  left: 75rpx;
+  border: none !important;
+}
+.login_main_bottom_wanji{
+  font-family: PingFangSC-Regular;
+  color: red ;
+  opacity: 0.8;
+  width: 112rpx;
+  height: 40rpx;
+  border-bottom: 2rpx solid red;
+}

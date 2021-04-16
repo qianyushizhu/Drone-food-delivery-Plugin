@@ -1,0 +1,262 @@
+.home_container{
+  
+  box-sizing: border-box;
+  
+}
+.home_swiper_img{
+  width: 690rpx;
+  height: 230rpx;
+}
+.home_swiper_container{
+  
+  line-height: 120rpx;
+
+}
+.home_middle_container{
+    margin-bottom: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_top{
+  height: 366rpx;
+  background-color: #fff;
+  padding: 42rpx 30rpx;
+  box-sizing: border-box;
+}
+.home_top_buttom{
+  /* margin-left: -10rpx; */
+  /* margin-bottom: 20rpx; */
+  position: relative;
+  top: -30rpx;
+}
+.home_top_buttom input{
+  box-sizing: border-box;
+  width: 690rpx;
+  height: 80rpx;
+  background: #F9F9F9;
+  border: 2rpx solid rgba(229,236,237,1);
+  border-radius: 20rpx;
+  padding-left: 80rpx;
+  padding-right: 40rpx;
+}
+.cleanimg{
+  position: absolute;
+  right: 16rpx;
+  bottom: 20rpx;
+  z-index: 999;
+  width: 40rpx;
+  height: 40rpx;
+}
+.searchimg{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  z-index: 1;
+  left: 20rpx;
+  top: 21.5rpx;
+
+}
+input{
+  width: 100%;
+  height: 60rpx;
+  background-color: white;
+  font-size: 28rpx;
+  /* text-align: center; */
+  position: relative;
+  z-index: 9;
+}
+.home_middle_all{
+  background-color: rgb(246,246,246);
+  height: 1200rpx;
+  margin-top: 66rpx;
+  /* position: relative; */
+}
+.order_list_container{
+  
+  box-sizing: border-box;
+  margin-left: 31rpx;
+  margin-top: 40rpx;
+  position: relative;
+  top: 40rpx;
+
+}
+.imgcontainer{
+  
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  /* margin-top: 25rpx; */
+  transform: translate(-50%,-50%);
+}
+
+.order_list_item_img{
+  width: 252rpx;
+  height: 20rpx;
+}
+.order_list_item_img2{
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+  top: 5.5rpx;
+  margin-right: 13rpx;
+}
+.order_list_item_img2_all{
+  position: relative;
+  left: 50rpx;
+  top: 5rpx;
+}
+.order_list_item_img2_all1{
+  position: relative;
+  left: 25rpx;
+}
+.order_list_item{
+  width: 690rpx;
+  height: 296rpx;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.10);
+  border: 1rpx solid transparent;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  
+}
+.order_list_item{
+  /* margin-bottom: 20rpx; */
+}
+.order_list_item_top{
+  width: 690rpx;
+  
+  background-color: rgb(79,79,79);
+  font-size: 20rpx;
+  font-family: PingFangSC-Regular;
+  color: #FFFFFF ;
+  line-height: 42rpx;
+  position: relative;
+  
+}
+.order_list_item_top text{
+  margin-left: 20rpx;
+}
+.order_list_item_bottom{
+  width: 690rpx;
+  height: 254rpx;
+  background-color: #fff;
+}
+.common_sive{
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+    color: #000000;
+    opacity: 0.6;
+}
+.common_bigsive{
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #000;
+}
+
+.order_list_item_middle{
+  display: flex;
+  margin-left: 120rpx;
+  position: relative;
+  top: 20rpx;
+  /* margin-top: 20rpx; */
+}
+.goingclass{
+  font-family: PingFangSC-Regular;
+  color: #37AC96 ;
+  font-size: 24rpx;
+}
+.order_list_item_middle_left{
+  width: 100rpx;
+  height: 68rpx;
+  position: relative;
+  left: -50rpx;
+  top: 23rpx;
+}
+.order_list_item_middle_middle{
+  width: 252rpx;
+  height: 96rpx;
+  position: relative;
+  top: 15rpx;
+}
+.order_list_item_middle_right{
+  width: 60rpx;
+  height: 68rpx;
+  position: relative;
+  left: 65rpx;
+  top: 21rpx;
+  text-align: center;
+}
+.blackclass{
+  font-family: PingFangSC-Regular;
+  color: #000;
+  font-size: 24rpx;
+}
+
+.order_list_item_middle_left_text_top1{
+  margin-bottom: 5rpx;
+}
+.order_list_item_middle_left_text_top2{
+  position: relative;
+  left: -20rpx;
+  width: 200rpx;
+}
+.order_list_item_middle_right_text1{
+  width: 100rpx;
+  margin-bottom: 3rpx;
+}
+.order_list_item_middle_right_text2{
+  width: 100rpx;
+
+}
+.order_list_item_tab{
+  display: flex;
+  position: relative;
+}
+.food{
+  font-size: 28rpx;
+  
+}
+
+.order_list_item_tab_top{
+  position: relative;
+  top: 40rpx;
+  left: 20rpx;
+
+  
+}
+
+.goingclass2{
+  font-size: 24rpx;
+}
+.order_list_item_tab_bottom{
+  display: flex;
+  width: 116rpx;
+  /* height: 30rpx; */
+  /* width: 680rpx; */
+  /* border: 1rpx solid rgba(55,172,150,1); */
+  justify-content: space-between;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+  color: #fff;
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+
+
+}
+.order_list_item_tab_bottom_text1{
+  width: 119rpx;
+  height: 45rpx;
+  background-color: rgb(55,172,150);
+  
+  text-align: center;
+  line-height: 43rpx;
+  border-radius: 20rpx;
+      position: absolute;
+      bottom: 6rpx;
+      right: 40rpx;
+     
+  
+}
